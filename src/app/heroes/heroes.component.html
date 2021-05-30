@@ -1,0 +1,13 @@
+<mat-card class="heroes-card">
+  <mat-card-title> Heroes</mat-card-title>
+
+  <mat-card-content>
+    <mat-action-list>
+      <mat-list-item *ngFor="let hero of heroes">
+        <a style="text-decoration: none; color: white" routerLink="/detail/{{ hero.id }}">
+          <span class="badge">{{ hero.id }}</span> {{ hero.name }}
+        </a>
+      </mat-list-item>
+    </mat-action-list>
+  </mat-card-content>
+</mat-card>
